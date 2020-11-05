@@ -12,16 +12,14 @@ import { RegisterPage } from '../RegisterPage';
 class App extends React.Component {
     constructor(props) {
         super(props);
-        try {
 
-            history.listen((location, action) => {
-                // clear alert on location change
+        history.listen((location, action) => {
+            // clear alert on location change
+            try {
                 this.props.clearAlerts();
-            });
-        } catch (e) {
-            console.log("thats an error")
-        }
-
+            }
+            catch (e) { console.log("got an error", e) }
+        });
     }
 
     render() {

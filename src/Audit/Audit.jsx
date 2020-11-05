@@ -17,16 +17,6 @@ class Auditpage extends React.Component {
         searchitems: []
     }
 
-    // filterUserItems(){
-    //     useritems = this.props.users.items;
-    //     let s = this.state.searchtext
-    //     let usrobj = users.items.filter(x => x.firstName.toLowercase().includes(s) || x.lastName.toLowercase().includes(s))
-    //     console.log("filtered",usrobj)
-    //     // return usrobj
-    // }
-    // handleButton=()=>{
-    //     this.setState({search:true})
-    // }
     handleTimeFormatChange = (x) => {
         // console.log("format changed", x)
         this.setState({ timeFormat: x })
